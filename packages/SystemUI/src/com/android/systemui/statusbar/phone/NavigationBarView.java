@@ -849,6 +849,8 @@ public class NavigationBarView extends FrameLayout implements PluginListener<Nav
             setRotateButtonVisibility(false);
         }
 
+        getRecentsButton().setVisibility(visible ? View.INVISIBLE : View.VISIBLE);
+
         getAccessibilityButton().setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
         getAccessibilityButton().setLongClickable(longClickable);
     }
